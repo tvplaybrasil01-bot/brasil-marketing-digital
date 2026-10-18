@@ -1,0 +1,42 @@
+BRASIL MARKETING DIGITAL — SITE DIRETÓRIO
+===========================================
+
+ARQUIVOS
+- index.html: site completo, responsivo e pronto para hospedagem estática.
+- LEIA-ME.txt: instruções de publicação.
+
+CONTATOS WHATSAPP CONFIGURADOS
+- WhatsApp 1: +55 31 99317-7883
+- WhatsApp 2: +55 31 99435-7706
+
+ANTES DE PUBLICAR
+1. Confira os dois números comerciais.
+2. Confira o preço de referência de R$ 35/mês.
+3. Confira os nomes, descrições e condições dos aplicativos parceiros.
+4. Confirme todas as condições comerciais antes de divulgar.
+5. Os links de consulta dos aplicativos abrem o WhatsApp 1; o botão de atendimento principal apresenta os dois contatos.
+
+PUBLICAR GRATUITAMENTE PELO GITHUB + CLOUDFLARE PAGES
+1. Entre em https://github.com e crie um repositório público chamado:
+   brasil-marketing-digital
+2. No repositório, clique em Add file > Upload files.
+3. Envie o arquivo index.html (não envie apenas o ZIP; extraia-o primeiro).
+4. Clique em Commit changes.
+5. Entre em https://dash.cloudflare.com e faça login/crie uma conta.
+6. Abra Workers & Pages (ou Compute > Workers & Pages, conforme a interface).
+7. Clique em Create application / Create, escolha Pages e conecte ao Git.
+8. Autorize o GitHub e escolha o repositório brasil-marketing-digital.
+9. Configure:
+   - Production branch: main
+   - Framework preset: None
+   - Build command: deixe vazio, se permitido; se exigir um comando, use: exit 0
+   - Build output directory: / ou . (conforme a interface aceitar)
+10. Clique em Save and Deploy.
+11. Aguarde o deploy terminar e abra o endereço *.pages.dev fornecido pela Cloudflare.
+
+ATUALIZAR O SITE
+- Edite index.html no GitHub ou envie uma versão nova.
+- Clique em Commit changes. A Cloudflare publica a atualização automaticamente.
+
+OBSERVAÇÃO
+O menu da Cloudflare pode mudar. Escolha Cloudflare Pages conectado ao Git, não um Worker em branco.

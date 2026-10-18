@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<meta name="description" content="Brasil Marketing Digital: conheça nossos aplicativos parceiros, planos, informações sobre IPTV e atendimento.">
+<title>Brasil Marketing Digital | Diretório de serviços</title>
+<style>
+:root{--bg:#090b12;--panel:#111522;--panel2:#171c2b;--text:#f6f7fb;--muted:#aeb6c9;--red:#ff3448;--red2:#c9152c;--line:#2a3042;--green:#25d366;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#3b1020 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit}button,a{touch-action:manipulation}.wrap{width:min(var(--max),calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(9,11,18,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:.2px}.logo{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--red),#8c1026);font-weight:950;box-shadow:0 8px 26px #ff34482b}.brand small{display:block;color:var(--muted);font-size:11px;font-weight:650;letter-spacing:1.6px}.navlinks{display:flex;gap:19px;align-items:center}.navlinks a{text-decoration:none;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}.menu{display:none;background:transparent;border:1px solid var(--line);border-radius:10px;color:white;padding:8px 11px}
+.hero{padding:76px 0 54px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#ff8b98;background:#ff344817;border:1px solid #ff34483d;padding:6px 11px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--red)}h1{font-size:clamp(38px,6vw,66px);line-height:1.04;letter-spacing:-2px;margin:20px 0}h1 span{color:var(--red)}.lead{font-size:18px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:13px 18px;font-weight:800;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--red);color:white;box-shadow:0 10px 30px #ff34482b}.secondary{border-color:var(--line);background:#ffffff07}.hero-card{border:1px solid #ffffff1b;border-radius:24px;padding:25px;background:linear-gradient(145deg,#1a2030,#10131e);box-shadow:0 25px 80px #0005;position:relative;overflow:hidden}.hero-card:after{content:"";position:absolute;width:180px;height:180px;background:#ff34481a;border-radius:50%;right:-55px;top:-55px;filter:blur(3px)}.hero-card h2{font-size:20px;margin:0 0 5px}.hero-card p{color:var(--muted);margin:0 0 18px;font-size:14px}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{padding:14px;border:1px solid var(--line);background:#090b126e;border-radius:14px}.stat strong{display:block;font-size:18px}.stat span{font-size:12px;color:var(--muted)}
+section{padding:58px 0}.section-head{max-width:720px;margin-bottom:28px}.kicker{font-size:12px;font-weight:850;letter-spacing:1.8px;color:var(--red);text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.15;letter-spacing:-1px;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,var(--panel),#0e111a);border:1px solid var(--line);border-radius:18px;padding:22px;min-width:0}.card:hover{border-color:#ff344866}.app-head{display:flex;align-items:center;gap:13px;margin-bottom:14px}.app-icon{width:54px;height:54px;flex:none;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,#ff3448,#821025);font-size:17px;font-weight:950;letter-spacing:-1px}.app-icon.world{background:linear-gradient(145deg,#2777ff,#132b74)}.app-icon.flash{background:linear-gradient(145deg,#ff9f2f,#b22b19)}.card h3{margin:0;font-size:19px}.tag{font-size:11px;color:#ffb4bd;background:#ff34481b;border-radius:6px;padding:3px 7px;display:inline-block;margin-top:4px}.card p{color:var(--muted);font-size:14px}.card ul{padding-left:18px;color:var(--muted);font-size:14px}.card .btn{margin-top:6px;width:100%;font-size:14px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:18px;border-radius:16px;background:#ffffff05;border:1px solid var(--line)}.feature .ico{font-size:22px}.feature h3{font-size:16px;margin:8px 0 4px}.feature p{font-size:14px;color:var(--muted);margin:0}
+.pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.price-card{border:1px solid var(--line);border-radius:20px;padding:25px;background:var(--panel)}.price-card.highlight{border-color:var(--red);box-shadow:0 0 0 1px #ff344822}.price-card h3{margin:0}.price{font-size:42px;font-weight:900;letter-spacing:-1.5px;margin:10px 0}.price small{font-size:14px;letter-spacing:0;color:var(--muted);font-weight:600}.price-card p,.price-card li{color:var(--muted);font-size:14px}.price-card ul{padding-left:20px}.note{border:1px solid #d89e3c55;background:#d89e3c0d;color:#e9d3a7;padding:14px 16px;border-radius:12px;font-size:13px;margin-top:16px}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.guide-item{border:1px solid var(--line);border-radius:17px;padding:20px;background:var(--panel)}.guide-item h3{margin:0 0 8px}.guide-item p{margin:0;color:var(--muted);font-size:14px}.faq{display:grid;gap:10px}details{border:1px solid var(--line);border-radius:13px;padding:16px 18px;background:var(--panel)}summary{font-weight:800;cursor:pointer}details p{color:var(--muted);font-size:14px;margin-bottom:0}
+.contact{border:1px solid #ff34484d;border-radius:24px;padding:clamp(22px,5vw,42px);background:linear-gradient(120deg,#24101a,#111522 65%);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.contact h2{font-size:clamp(27px,4vw,40px);line-height:1.15;margin:0 0 10px}.contact p{color:var(--muted);margin:0}.whatsapp{background:var(--green);color:#06270f}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+footer{padding:30px 0 90px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot a{color:var(--muted)}.float-wa{position:fixed;right:18px;bottom:18px;z-index:25;background:var(--green);color:#06270f;text-decoration:none;font-weight:900;padding:13px 17px;border-radius:99px;box-shadow:0 8px 28px #0007}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:50px}.cards{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.navlinks{display:none;position:absolute;top:73px;left:0;right:0;background:#0b0e17;border-bottom:1px solid var(--line);padding:18px;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}}
+@media(max-width:560px){.wrap{width:min(var(--max),calc(100% - 26px))}.cards,.features,.pricing,.guide-grid{grid-template-columns:1fr}.hero{padding-top:38px}.hero-card{padding:19px}.nav{min-height:66px}.navlinks{top:65px}.brand{font-size:14px}.brand small{font-size:9px}.logo{width:38px;height:38px}section{padding:42px 0}.float-wa{right:12px;bottom:12px}.price{font-size:38px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Brasil Marketing Digital - início"><span class="logo">BM</span><span>BRASIL MARKETING DIGITAL<small>TECNOLOGIA • CONECTIVIDADE • ENTRETENIMENTO</small></span></a>
+    <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰ Menu</button>
+    <nav class="navlinks" id="navlinks">
+      <a href="#sobre">A empresa</a><a href="#parceiros">Aplicativos</a><a href="#planos">Planos</a><a href="#iptv-gratis">IPTV grátis</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Seu diretório digital</span>
+      <h1>Entre no futuro do <span>entretenimento.</span></h1>
+      <p class="lead">Conheça a Brasil Marketing Digital, explore nossos aplicativos parceiros, consulte informações sobre planos e fale com nossa equipe de atendimento em poucos cliques.</p>
+      <div class="actions"><a class="btn primary" href="#parceiros">Conhecer aplicativos <span>→</span></a><a class="btn secondary" href="#contato">Falar com atendimento</a></div>
+    </div>
+    <aside class="hero-card">
+      <h2>Um só lugar. Todas as informações.</h2><p>Use este diretório para conhecer os serviços, conferir detalhes e encontrar o canal de contato oficial.</p>
+      <div class="stat-grid">
+        <div class="stat"><strong>Aplicativos</strong><span>Conheça os parceiros</span></div>
+        <div class="stat"><strong>Planos</strong><span>Consulte condições</span></div>
+        <div class="stat"><strong>Suporte</strong><span>Orientação e dúvidas</span></div>
+        <div class="stat"><strong>Guia gratuito</strong><span>Opções legais de IPTV</span></div>
+      </div>
+    </aside>
+  </div>
+</section>
+<section id="sobre">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Sobre nós</span><h2>Informação clara para você escolher melhor.</h2><p>A Brasil Marketing Digital reúne informações sobre seus serviços e aplicativos parceiros em um único endereço. Nosso objetivo é facilitar a descoberta, explicar as opções e direcionar cada cliente ao atendimento adequado.</p></div>
+    <div class="features">
+      <article class="feature"><div class="ico">◎</div><h3>Central de informações</h3><p>Consulte descrições, recursos e orientações em um só lugar.</p></article>
+      <article class="feature"><div class="ico">↗</div><h3>Contato simplificado</h3><p>Fale com a equipe para confirmar disponibilidade, valores e condições.</p></article>
+      <article class="feature"><div class="ico">▣</div><h3>Compatibilidade</h3><p>Antes de contratar, confirme os dispositivos e requisitos do aplicativo escolhido.</p></article>
+    </div>
+  </div>
+</section>
+<section id="parceiros">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Diretório de parceiros</span><h2>Conheça os aplicativos.</h2><p>Consulte as informações abaixo e fale com a equipe para confirmar funcionalidades, catálogo, compatibilidade e disponibilidade atual.</p></div>
+    <div class="cards">
+      <article class="card"><div class="app-head"><div class="app-icon">PLAY</div><div><h3>Play TV</h3><span class="tag">Aplicativo parceiro</span></div></div><p>Informações sobre o serviço Play TV, opções de acesso e orientações para instalação.</p><ul><li>Consulte os dispositivos compatíveis</li><li>Peça informações sobre planos</li><li>Suporte e orientações de configuração</li></ul><a class="btn secondary wa-link" data-message="Olá! Gostaria de informações sobre a Play TV." href="#">Consultar Play TV ↗</a></article>
+      <article class="card"><div class="app-head"><div class="app-icon world">WORLD</div><div><h3>World TV</h3><span class="tag">Aplicativo parceiro</span></div></div><p>Conheça as informações disponíveis sobre o aplicativo e consulte as condições antes de contratar.</p><ul><li>Detalhes do serviço</li><li>Valores e condições atualizados</li><li>Ajuda para começar</li></ul><a class="btn secondary wa-link" data-message="Olá! Gostaria de informações sobre a World TV." href="#">Consultar World TV ↗</a></article>
+      <article class="card"><div class="app-head"><div class="app-icon flash">FLASH</div><div><h3>Flash TV</h3><span class="tag">Aplicativo parceiro</span></div></div><p>Entre em contato para conhecer as opções disponíveis, os requisitos e o suporte oferecido.</p><ul><li>Informações sobre acesso</li><li>Consulta de mensalidade</li><li>Orientação de uso</li></ul><a class="btn secondary wa-link" data-message="Olá! Gostaria de informações sobre a Flash TV." href="#">Consultar Flash TV ↗</a></article>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:16px">Os nomes acima identificam os serviços apresentados neste diretório. Marcas e aplicativos pertencem aos respectivos titulares. Confirme com o atendimento quais parcerias e ofertas estão vigentes.</p>
+  </div>
+</section>
+<section id="planos">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Planos e valores</span><h2>Consulte a opção ideal para você.</h2><p>Valores de referência editáveis. Confirme preço, condições, conteúdo autorizado e disponibilidade antes de efetuar qualquer pagamento.</p></div>
+    <div class="pricing">
+      <article class="price-card"><h3>Plano mensal</h3><div class="price">R$ 35<small> / mês</small></div><p>Valor de referência para consulta. A disponibilidade e os recursos dependem do aplicativo escolhido.</p><ul><li>Informações sobre ativação</li><li>Orientação de compatibilidade</li><li>Atendimento para dúvidas</li></ul><a class="btn secondary wa-link" data-message="Olá! Quero confirmar o valor e as condições do plano mensal." href="#">Consultar este plano</a></article>
+      <article class="price-card highlight"><h3>Ofertas e promoções</h3><div class="price">Consulte</div><p>Consulte a equipe para verificar campanhas vigentes, condições especiais e eventuais descontos.</p><ul><li>Condições atualizadas</li><li>Prazo e regras da promoção</li><li>Confirmação antes da contratação</li></ul><a class="btn primary wa-link" data-message="Olá! Quais promoções e condições estão disponíveis atualmente?" href="#">Ver ofertas disponíveis</a></article>
+    </div>
+    <div class="note"><strong>Importante:</strong> os preços deste modelo são referências iniciais e devem ser confirmados antes da publicação comercial. Não anuncie canais, filmes ou plataformas de terceiros sem autorização para distribuí-los.</div>
+  </div>
+</section>
+<section id="iptv-gratis">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Guia informativo</span><h2>IPTV grátis: o que você precisa saber.</h2><p>IPTV é a distribuição de conteúdo televisivo por meio de redes IP e conexão com a internet. Existem opções gratuitas e legais, mas nem todo link encontrado na internet tem autorização para transmitir o conteúdo.</p></div>
+    <div class="guide-grid">
+      <article class="guide-item"><h3>📺 Onde encontrar opções gratuitas</h3><p>Procure aplicativos e sites oficiais de emissoras, canais públicos, serviços gratuitos com anúncios e plataformas que declarem claramente os direitos de transmissão. Baixe aplicativos pelas lojas oficiais sempre que possível.</p></article>
+      <article class="guide-item"><h3>🔎 Como avaliar um serviço</h3><p>Confira quem opera o serviço, a política de privacidade, as permissões solicitadas, os termos de uso e se há informações claras sobre os direitos de distribuição do conteúdo.</p></article>
+      <article class="guide-item"><h3>📱 Dispositivos compatíveis</h3><p>A compatibilidade depende de cada aplicativo. Verifique os requisitos para Android, iPhone, Smart TV, TV Box e computador no site ou na loja oficial do fornecedor.</p></article>
+      <article class="guide-item"><h3>🛡️ Segurança em primeiro lugar</h3><p>Evite APKs de origem desconhecida, páginas que pedem dados bancários sem justificativa e listas com conteúdo sem origem clara. Não compartilhe senhas nem códigos de ativação.</p></article>
+    </div>
+  </div>
+</section>
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Perguntas frequentes</span><h2>Ficou com alguma dúvida?</h2></div>
+    <div class="faq">
+      <details><summary>Como faço para contratar um aplicativo?</summary><p>Use um dos botões de consulta e fale com o atendimento. Confirme preço, forma de pagamento, duração do acesso, dispositivos compatíveis e condições antes de concluir.</p></details>
+      <details><summary>O valor mostrado no site é definitivo?</summary><p>Não necessariamente. Os valores exibidos são referências iniciais e podem mudar. Confirme o preço e as condições vigentes diretamente com a equipe.</p></details>
+      <details><summary>IPTV é sempre gratuito?</summary><p>Não. IPTV é uma tecnologia de distribuição. Alguns serviços são gratuitos, outros pagos. A legalidade depende dos direitos e das autorizações para disponibilizar cada conteúdo.</p></details>
+      <details><summary>Vocês ajudam na instalação?</summary><p>A equipe pode orientar sobre os passos e requisitos do aplicativo parceiro. A disponibilidade de suporte específico deve ser confirmada pelo WhatsApp.</p></details>
+      <details><summary>Como sei se meu aparelho é compatível?</summary><p>Informe o modelo do aparelho e o sistema operacional ao atendimento. A compatibilidade deve ser confirmada para o aplicativo específico.</p></details>
+    </div>
+  </div>
+</section>
+<section id="contato">
+  <div class="wrap">
+    <div class="contact">
+      <div><span class="kicker">Atendimento</span><h2>Vamos conversar?</h2><p>Fale com a Brasil Marketing Digital para tirar dúvidas, consultar preços e conhecer os aplicativos parceiros.</p></div>
+      <div class="contact-actions"><a class="btn whatsapp" id="mainWhatsApp" href="#" rel="noopener">☏ WhatsApp 1 · 31 99317-7883</a><a class="btn whatsapp" id="secondWhatsApp" href="#" rel="noopener">☏ WhatsApp 2 · 31 99435-7706</a><a class="btn secondary" href="#parceiros">Ver aplicativos</a></div>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:15px">WhatsApp 1: +55 31 99317-7883 · WhatsApp 2: +55 31 99435-7706.</p>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>BRASIL MARKETING DIGITAL</strong><br>Informação, tecnologia e atendimento.</div><div>© <span id="year"></span> Brasil Marketing Digital. Todos os direitos reservados.</div><div><a href="#inicio">Voltar ao topo ↑</a></div></div><div class="wrap" style="margin-top:16px;font-size:11px">Este diretório é informativo. Serviços, marcas e aplicativos são de seus respectivos titulares. Disponibilidade, preços e recursos devem ser confirmados antes da contratação.</div></footer>
+<a class="float-wa" id="floatWhatsApp" href="#" rel="noopener">WhatsApp ↗</a>
+<script>
+const PHONE_1 = "5531993177883";
+const PHONE_2 = "5531994357706";
+const makeWhatsApp = (phone, message) => "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+document.getElementById("mainWhatsApp").href = makeWhatsApp(PHONE_1, "Olá! Vim pelo site da Brasil Marketing Digital e gostaria de informações.");
+document.getElementById("secondWhatsApp").href = makeWhatsApp(PHONE_2, "Olá! Vim pelo site da Brasil Marketing Digital e gostaria de informações.");
+document.getElementById("floatWhatsApp").href = makeWhatsApp(PHONE_1, "Olá! Vim pelo site da Brasil Marketing Digital.");
+document.querySelectorAll(".wa-link").forEach(link => link.href = makeWhatsApp(PHONE_1, link.dataset.message || "Olá! Gostaria de informações."));
+document.getElementById("year").textContent = new Date().getFullYear();
+const menuBtn = document.getElementById("menuBtn"), nav = document.getElementById("navlinks");
+menuBtn.addEventListener("click", () => { const open = nav.classList.toggle("open"); menuBtn.setAttribute("aria-expanded", String(open)); });
+nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {nav.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false");}));
+</script>
+</body>
+</html>
